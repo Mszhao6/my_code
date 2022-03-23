@@ -1,0 +1,13 @@
+#读取数据
+import numpy as np
+x=np.loadtxt('xxxxx',delimiter=',') 
+y = np.loadtxt('xxxxx',delimiter=',')
+#划分数据集，固定随机种子
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.25,random_state = 1)
+#输出训练集、预测集样本个数print( y_train.shape, y_test.shape)
+print( x_train.shape, x_test.shape,y_train.shape, y_test.shape)
+#输出训练集、校正集最小值、最大值、平均值、标准差
+from statistics import mean
+print(min(y_train),max(y_train),mean(y_train),np.std(y_train,ddof=1))
+print(min(y_test),max(y_test),mean(y_test),np.std(y_test,ddof=1))
