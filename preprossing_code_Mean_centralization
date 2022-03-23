@@ -1,0 +1,7 @@
+def mean_centralization(sdata):
+    """
+    均值中心化
+    """
+    temp1 = np.mean(sdata, axis=0)
+    temp2 = np.tile(temp1, sdata.shape[0]).reshape((sdata.shape[0], sdata.shape[1]))
+    return sdata - temp2
