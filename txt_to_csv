@@ -1,6 +1,0 @@
-#txt转csv
-import numpy as np
-import pandas as pd
-data_txt = np.loadtxt(''xxxxxxx'')
-data_txtDF = pd.DataFrame(data_txt)
-data_txtDF.to_csv('xxxxx')
