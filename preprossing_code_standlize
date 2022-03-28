@@ -1,8 +1,0 @@
-
-def standardlize(sdata):
-    """
-    标准化
-    """
-    from sklearn import preprocessing
-    return preprocessing.scale(sdata)
-
