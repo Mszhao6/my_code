@@ -1,9 +1,0 @@
-
-def D1(sdata):
-    """
-    一阶差分
-    """
-    temp1 = pd.DataFrame(sdata)
-    temp2 = temp1.diff(axis=1)
-    temp3 = temp2.values
-    return np.delete(temp3, 0, axis=1)
